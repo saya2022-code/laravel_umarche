@@ -6,16 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Owner extends Model
-{
-    use HasFactory;
-}
 
 class Owner extends Authenticatable
 {
     use HasFactory;
 
-        /**
+    /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
@@ -45,4 +41,3 @@ class Owner extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
-
